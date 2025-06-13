@@ -1,39 +1,23 @@
-# === DEPENDÊNCIAS ===
+# Ignorar node_modules
 node_modules/
-package-lock.json
 
-# === CONFIGURAÇÕES DE AMBIENTE ===
+# Ignorar arquivos de ambiente
 .env
-.env.local
-.env.*.local
+.env.*
 
-# === LOGS ===
+# Ignorar logs
 logs/
 *.log
+
+# Ignorar arquivos de cache
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 
-# === SISTEMAS E TEMPORÁRIOS ===
+# Ignorar diretórios de build
+dist/
+build/
+
+# Ignorar arquivos do sistema operacional
 .DS_Store
 Thumbs.db
-*.tmp
-*.swp
-*.swo
-*.swn
-
-# === BACKUP E DUMP DE BANCO ===
-*.sql
-*.sqlite
-*.db
-dump.sql
-
-# === VSCODE E IDEs ===
-.vscode/
-*.code-workspace
-
-# === WINDOWS ===
-$RECYCLE.BIN/
-*.lnk
-desktop.ini
