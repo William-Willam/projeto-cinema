@@ -68,3 +68,11 @@ CREATE TABLE pagamento (
   FOREIGN KEY (ingresso_id) REFERENCES ingressos(id),
   FOREIGN KEY (funcionario_id) REFERENCES funcionario(id)
 );
+
+
+-- MODEL (Backend)
+-- Inserir o primeiro admin com senha
+INSERT INTO admin (codAdmin, senha)
+VALUES ('ADM001', '$2a$10$J66CwA4eVvda63GmBQWnROXYTRhVD9gbJgHwXy7ZDuIXMPvUuTnRW');
+
+
