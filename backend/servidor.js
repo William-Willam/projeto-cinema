@@ -19,6 +19,7 @@ const rotasFuncionarios = require("./routes/rotas-funcionario");
 const rotasFilmes = require("./routes/rotas-filmes");
 const rotasSessoes = require("./routes/rotas-sessao");
 const rotasCadeiras = require("./routes/rotas-cadeiras");
+const rotasReservas = require("./routes/rotas-reservas");
 
 // Definindo as rotas do servidor
 app.use('/api/auth', rotasAutenticacao);
@@ -26,6 +27,7 @@ app.use('/api/funcionarios', rotasFuncionarios);
 app.use('/api/filmes', rotasFilmes);
 app.use('/api/sessoes', rotasSessoes);
 app.use('/api/cadeiras', rotasCadeiras);
+app.use("/api/reservas", rotasReservas);
 
 
 // Definindo a rota raiz
