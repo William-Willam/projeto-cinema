@@ -1,6 +1,3 @@
-const db = require("../config/conexao-banco");
-const bcrypt = require("bcrypt");
-
 // Função para criar um novo funcionário
 const db = require('../config/conexao-banco');
 const bcrypt = require('bcryptjs');

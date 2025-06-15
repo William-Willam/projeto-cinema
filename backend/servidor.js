@@ -17,7 +17,7 @@ app.use(express.json());
 const rotasAutenticacao = require("./routes/rotas-autenticacao");
 const rotasFuncionarios = require("./routes/rotas-funcionario");
 const rotasFilmes = require("./routes/rotas-filmes");
-const rotasSessoes = require("./routes/rotas-sessoes");
+const rotasSessoes = require("./routes/rotas-sessao");
 
 // Definindo as rotas do servidor
 app.use('/api/auth', rotasAutenticacao);
