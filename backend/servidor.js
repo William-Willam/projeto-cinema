@@ -15,13 +15,15 @@ app.use(express.json());
 
 // Importando as rotas
 const rotasAutenticacao = require("./routes/rotas-autenticacao");
-const rotasFilmes = require("./routes/rotas-filmes");
 const rotasFuncionarios = require("./routes/rotas-funcionario");
+const rotasFilmes = require("./routes/rotas-filmes");
+const rotasSessoes = require("./routes/rotas-sessoes");
 
 // Definindo as rotas do servidor
 app.use('/api/auth', rotasAutenticacao);
-app.use('/api/filmes', rotasFilmes);
 app.use('/api/funcionarios', rotasFuncionarios);
+app.use('/api/filmes', rotasFilmes);
+app.use('/api/sessoes', rotasSessoes);
 
 
 // Definindo a rota raiz

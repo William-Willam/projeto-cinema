@@ -63,5 +63,5 @@ exports.deletarSessao = async (req, res) =>{
     const { id } = req.params;
 
     await db.query("DELETE FROM sessoes WHERE id = ?", [id]);
-    res.json({ mensagem: "Sessão deletada com sucesso!" })
+    res.json({ mensagem: "Sessão deletada com sucesso!" });
 };

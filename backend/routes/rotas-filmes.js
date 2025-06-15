@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+
+// Middleware de autenticação
 const autenticar = require("../middlewares/autenticador");
 
 // Importando os controladores de filmes
