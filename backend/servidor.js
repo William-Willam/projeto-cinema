@@ -37,4 +37,5 @@ app.use("/api/ingressos", rotasIngressos);
 const PORTA = process.env.PORT || 3001;
 app.listen(PORTA, () => {
   console.log(`Servidor rodando na porta ${PORTA}`);
+  console.log(`Acesse a API em http://localhost:${PORTA}/api`);
 });
