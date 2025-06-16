@@ -21,6 +21,7 @@ const rotasSessoes = require("./routes/rotas-sessao");
 const rotasCadeiras = require("./routes/rotas-cadeiras");
 const rotasReservas = require("./routes/rotas-reservas");
 const rotasIngressos = require("./routes/rotas-ingressos");
+//const rotasPagamentos = require("./routes/rotas-pagamentos");
 
 // Definindo as rotas do servidor
 app.use('/api/auth', rotasAutenticacao);
@@ -30,6 +31,7 @@ app.use('/api/sessoes', rotasSessoes);
 app.use('/api/cadeiras', rotasCadeiras);
 app.use("/api/reservas", rotasReservas);
 app.use("/api/ingressos", rotasIngressos);
+//app.use("/api/pagamentos", rotasPagamentos);
 
 // Definindo a rota raiz
 const PORTA = process.env.PORT || 3001;
