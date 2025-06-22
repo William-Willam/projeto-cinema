@@ -73,6 +73,11 @@ CREATE TABLE pagamento (
 -- MODEL (Backend)
 -- Inserir o primeiro admin com senha
 INSERT INTO admin (codAdmin, senha)
-VALUES ('ADM001', '$2a$10$J66CwA4eVvda63GmBQWnROXYTRhVD9gbJgHwXy7ZDuIXMPvUuTnRW');
+VALUES ("ADM001", "$2b$10$xG6D8PfKmJWfEPyZjxTb..93UzVhN1AxYlGzhiknLdPCIr30ApoOG");
 
 
+
+-- selecionar tabela
+select * from admin;
+delete from admin where codAdmin = "ADM001";
+delete from admin where codAdmin = "admin123";
